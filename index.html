@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles.css" class="rel" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" class="form">
+        <div class="day"><label for="day">Day</label><input type="number" name="day" placeholder="dd" /><span class="day-error">Must be a valid day</span></div>
+        <div class="month"><label for="month">Month</label><input type="number" name="month" placeholder="mm" /><span class="month-error">Must be a valid month</span></div>
+        <div class="year"><label for="year">Year</label><input type="number" name="year" placeholder="yyyy" /><span class="year-error">Must be in the past</span></div>
+      </form>
+      <div class="btn">
+        <button type="submit"><img src="assets/images/icon-arrow.svg" /></button>
+      </div>
+      <div class="results">
+        <div class="age-years"><span class="result-number">38</span> years</div>
+        <div class="age-months"><span class="result-number">3</span> months</div>
+        <div class="age-days"><span class="result-number">26</span> days</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  width: 80%;
+  margin-bottom: 2.5rem;
+}
+
+.day,
+.month,
+.year {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn img {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  height: 4rem;
+}
+
+.btn button {
+  cursor: pointer;
+  border: none;
+}
+
+.results .result-number {
+  color: hsl(259, 100%, 65%); /* Purple color for the numeric value */
+}
+
+.results {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 700;
+  color: black;
+}
+
+.form label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  color: hsl(0, 1%, 44%);
+}
+
+.form input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  width: 70%;
+  border: 2px solid hsl(0, 0%, 86%);
+}
+
+input::placeholder {
+  color: hsl(0, 1%, 44%);
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+/* The label text turns red when an invalid value is input*/
+
+.invalid {
+  color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.day-error,
+.month-error,
+.year-error {
+  display: none;
+}
+
+button img {
+  padding: 1.2rem;
+}
